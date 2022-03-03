@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: aquamarine;
+    text-decoration: none;
+    height: 60px;
+    display: flex;
+    /* align-items: center; */
+    /* justify-items: center; */
+    justify-content: right;
+
+}
+.navbar ul{
+    /* display: inline-block; */
+    /* background-color:pink; */
+    /* display: flex; */
+    list-style: none;
+    position: absolute;
+    right: 30px;
+    
+}
+
+
+.navbar ul li{
+    text-decoration: none;
+    margin: 12 px;
+    display: inline-block;
+    
+    
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 20px;
+
+}
+.navbar ul li a:hover{
+    background-color: orange;
+}
+
+/* nombre de fantasia */
+.fantasia {
+    display: inline;
+    position: absolute;
+    left: 0%;
+    margin: 11px;
+    text-decoration: none;
+}
+
+.fas{
+    color: orangered;
+}
+
+/* submenu */
+
+.subCategoria{
+    /* color: rgb(82, 7, 82); */
+    margin-left: 0;
+}
+
+.subCategoria li ul{
+    display: none;
+    position: absolute;
+    left: 76.5px;
+    top: 60px;
+    width: 110px;
+    /* margin-right: 100px; */
+}
+.subCategoria li:hover > ul{
+    display: block;
+    color: black;
+    /* transition: 2s; */
+    /* background-color: orangered; */
+    /* width: 298px; */
+    margin: 0;
+    z-index: 5;
+}
+
+.subCategoria li ul li{
+    /* border: 1px solid aquamarine; */
+    background-color: aquamarine;
+    border-collapse:separate;
+    display: block;
+    height: 55px;
+    padding: 0;
+
+}
