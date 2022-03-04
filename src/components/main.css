@@ -1,0 +1,21 @@
+
+.tituloMain{
+    color: blueviolet;
+    text-align: center;
+    margin: 25px;
+}
+
+.modelos{
+    margin-top:32px ;
+    margin: 22px;
+}
+
+ul{
+    margin-left: 50px;
+    list-style: none;
+}
+
+.catalogo{
+    display: flex;
+    
+}

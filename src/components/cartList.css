@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.tarjetasCarrito{
+    background-color: sandybrown;
+    margin: 30px;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.eliminar{
+    position: relative;
+    bottom: 3px;
+    left: 55px;
+    background-color: orange;
+    border: none;
+
+    
+}
+
+.fas{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.61);
+}
+.fas:hover{
+    color: red;
+}
+.total{
+    position: absolute;
+    right: 10%;
+    top: 12%;
+}
+.carrito{
+    margin: 8px;
+    text-align: center;
+}
+.verProductos{
+    text-decoration: none;
+}
+.verProductos:hover{
+    color: aquamarine;
+}
+.finCompra{
+    font-size: 15px;
+    padding: 5px;
+    position: absolute;
+    right: 10%;
+    margin-top: 10px;
+}
+.form{
+    font-size: 15px;
+    padding: 5px;
+    position: absolute;
+    right: 20%;
+    margin-top: 10px;
+}
+.finCompra:hover{
+    background-color: aquamarine;
+    
+}
+.form input{
+    margin-right: 10px;
+    margin-left: 5px;
+}
+

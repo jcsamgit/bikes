@@ -1,0 +1,37 @@
+.tarjetas{
+    /* display: flex; */
+    background-color: sandybrown;
+    margin: 30px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+
+}
+.contenedorTarjetas{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* itemDetail */
+.detalles{
+    color: rgb(82, 7, 82);
+    margin-left: 0;
+}
+
+.detalles li ul{
+    display: none;
+    position: absolute;
+}
+.detalles li:hover > ul{
+    display: block;
+    color: black;
+    transition: 2s;
+    /* background-color: orangered; */
+    width: 298px;
+}
+.oculto{
+    margin: 0;
+
+}
