@@ -13,8 +13,9 @@
 
 .eliminar{
     position: relative;
-    bottom: 3px;
-    left: 55px;
+    bottom: 20px;
+    left: 170px;
+    /* right: 5px; */
     background-color: orange;
     border: none;
 
