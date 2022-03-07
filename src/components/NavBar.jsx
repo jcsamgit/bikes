@@ -9,10 +9,10 @@ function NavBar(){
     return (
         <>
         <nav className="navbar">
-        <h1 ><Link className="fantasia" to='/'>Bikeshop</Link></h1>
+        <h1 ><Link className="fantasia" to='/bikes'>Bikeshop</Link></h1>
             <ul className="subCategoria">
                 <li>
-                    <Link to='/'>Inicio</Link>
+                    <Link to='/bikes'>Inicio</Link>
                 </li>
                 <li>
                     <Link to='#'>Categoria</Link>
