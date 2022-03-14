@@ -34,6 +34,7 @@ export const CartProvider= ({children,count}) =>{
             const cartDraft = [...cart];
             const cartEditado = cartDraft.find(product => product.id === item.id); 
             item.count = item.count;   
+            console.log("item..." , item)
             console.log("cartEditado.count",cartEditado.count)
             console.log("item.count",item.count)
             console.log("cartdraft...", cartDraft)
