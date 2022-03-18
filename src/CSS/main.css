@@ -1,0 +1,35 @@
+.tituloMain{
+    color: blueviolet;
+    text-align: center;
+    margin: 25px;
+}
+
+.modelos{
+    margin-top:32px ;
+    margin: 22px;
+}
+
+ul{
+    margin-left: 50px;
+    list-style: none;
+}
+
+.catalogo{
+    display: flex;
+    
+}
+.contenedorTarjetas{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    
+}
+.tarjetas{
+    /* display: flex; */
+    background-color: sandybrown;
+    margin: 30px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+
+}
