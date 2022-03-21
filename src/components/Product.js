@@ -1,6 +1,7 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
+import CartWidget from "./CartWidget";
 
 
 export default function Product({product:{id, title, precio, pictureUrl, descripcion}}){
@@ -11,7 +12,7 @@ export default function Product({product:{id, title, precio, pictureUrl, descrip
             <li>{title}</li>
             <li>Precio: ${precio}</li>
             <li>
-                <button>Añadir al carrito</button>
+                <button>Añadir al <CartWidget/></button>
             </li>
             <Link to= {`/item/${id}`} >
             <b>Ver detalles...</b>

@@ -25,9 +25,9 @@ function NavBar(){
                     <a href="#">Contacto</a>
                 </li>
                 <li>
-                    <Link to={'/cart'}>Carrito</Link> 
+                    <Link to={'/cart'}><CartWidget/></Link> 
                 </li>
-                    <CartWidget/>
+                    
             </ul>
         </nav>
          

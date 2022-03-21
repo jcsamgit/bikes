@@ -1,0 +1,60 @@
+
+.contenedorCarrito{
+    display: flex;
+    justify-content: flex-start;
+}
+.tarjetasCarrito{
+    background-color: sandybrown;
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+.tarjetasCarrito p{
+    margin-left: 5px;
+}
+
+.eliminar{
+    position: relative;
+    bottom: -20px;
+    left: 180px;
+    background-color: orange;
+    border: none;
+
+    
+}
+
+.fas{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.61);
+}
+.fas:hover{
+    color: red;
+}
+/* .total{
+    position: absolute;
+    right: 10%;
+    top: 12%;
+} */
+.carrito{
+    margin: 10px;
+    text-align: center;
+}
+
+.total {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
