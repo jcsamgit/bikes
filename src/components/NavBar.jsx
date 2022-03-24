@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom'
 import './navBar.css'
 import './CartWidget.js'
 import CartWidget from './CartWidget.js'
+import {useStateValue} from "../StateProvider"
 
 
 function NavBar(){
+    const [{basket},dispatch]= useStateValue()
     return (
         <>
         <nav className="navbar">
@@ -25,7 +27,14 @@ function NavBar(){
                     <a href="#">Contacto</a>
                 </li>
                 <li>
-                    <Link to={'/cart'}><CartWidget/></Link> 
+
+                    <Link to={'/carrito'}> <span className='navCart'><CartWidget/></span></Link> 
+                    {basket?.length>0 &&   
+                    
+                        <div className='contadorCarrito'>
+                        {basket?.length}
+                        </div>
+                    }
                 </li>
                     
             </ul>

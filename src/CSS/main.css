@@ -33,3 +33,28 @@ ul{
     border: 1px solid black;
 
 }
+.añadirCarrito{
+    position: relative;
+    top: 25px;
+    left: 202px;
+    background-color: sandybrown;
+    padding: 2px;
+    color: rgb(71, 0, 138);
+    border: none;
+    font-size: 15px;
+    text-decoration-line: underline;
+    
+}
+.añadirCarrito:hover{
+    cursor: pointer;
+    color: red;
+}
+
+.linkDetalles{
+    position: relative;
+    top: 5px;
+    margin-left: 2px;
+}
+.detallesCard{
+    margin-left: 2px;
+}

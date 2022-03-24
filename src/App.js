@@ -6,18 +6,23 @@ import NavBar from "./components/NavBar";
 import Product from "./components/Product";
 import Products from "./components/Products";
 import CheckoutPage from "./components/CheckoutPage"
+import { Route } from "react-router-dom";
 
 
 function App() {
-  return (
-
-    
+  return (    
     <BrowserRouter>
 
     <NavBar/>
     <Switch>
-      {/* <Products/> */}
-      <CheckoutPage/>
+
+      <Route path="/carrito">
+        <CheckoutPage/>
+      </Route>
+
+      <Route path={"/"}>
+        <Products/>
+      </Route>
 
     </Switch>
 
