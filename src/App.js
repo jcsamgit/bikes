@@ -7,6 +7,7 @@ import Product from "./components/Product";
 import Products from "./components/Products";
 import CheckoutPage from "./components/CheckoutPage"
 import { Route } from "react-router-dom";
+import ItemDetailContainer from "./components/ItemDetailContainer";
 
 
 function App() {
@@ -22,6 +23,13 @@ function App() {
 
       <Route path={"/"}>
         <Products/>
+      </Route>
+      <Route exact path="/category/:categoryId">
+        <Products/>
+      </Route>
+
+      <Route exact path="/item/:id">
+        <ItemDetailContainer/>
       </Route>
 
     </Switch>
