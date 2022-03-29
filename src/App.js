@@ -21,16 +21,18 @@ function App() {
         <CheckoutPage/>
       </Route>
 
-      <Route path={"/"}>
-        <Products/>
+      <Route path="/item/:id">
+        <ItemDetailContainer/>
       </Route>
+
       <Route exact path="/category/:categoryId">
         <Products/>
       </Route>
-
-      <Route exact path="/item/:id">
-        <ItemDetailContainer/>
+      
+      <Route path="/">
+        <Products/>
       </Route>
+
 
     </Switch>
 

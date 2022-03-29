@@ -43,7 +43,7 @@ export default function Products(){
         <div className="catalogo"> 
             <div className="contenedorTarjetas"> 
                 {
-                    productsDetail.map(product=> (
+                    items.map(product=> (
                         
                         <Product key={product.id} product={product}/>
                     ))

@@ -1,61 +1,51 @@
 
-import React from "react";
-import { Link } from "react-router-dom";
-import { actionTypes } from "../reducer";
-import CartWidget from "./CartWidget";
+
+import React from "react"
 import {useStateValue} from "../StateProvider"
+import { actionTypes } from "../reducer";
 
-
-export default function ItemDetail(props){
-    // const [{basket}, dispatch]= useStateValue();
+export default function ItemDetail ({items:{id, title, stock, precio, pictureUrl, descripcion}}){
+    // const [cantidadSeleccionada,setCantidadSeleccionada]= useState(0)
+    const [{basket}, dispatch]= useStateValue();
     
-    // const addToBasket= ()=> {
-    //     dispatch({
-    //         type: actionTypes.ADD_TO_BASKET,
-    //         item: {
-    //             id,
-    //             title,
-    //             stock,
-    //             precio,
-    //             pictureUrl,
-    //             descripcion,
-    //         }
-    //     })
-    // }
+    const addToBasket= ()=> {
+        dispatch({
+            type: actionTypes.ADD_TO_BASKET,
+            item: {
+                id,
+                title,
+                stock,
+                precio,
+                pictureUrl,
+                descripcion,
+            }
+        })
+    }
 
-    return( 
-        <>
-            <div style={{display:"flex",margin:"30px"}}>
+    return(
+        
 
-                <div className="detalls"> 
-                        <img src={props.pictureUrl} width="600px"/>
-                </div>
-                <div style={{margin:"40px 100px", lineHeight:"1.7"}}>
+        <div style={{display:"flex", flexWrap:"wrap",margin:"30px"}}>
 
-                    <ul >
-                        <h2>{props.title}</h2>
-                        <li>ID: {props.id}</li>
-                        <li>Stock: {props.stock}</li>
-                        <li>$ {props.precio}</li>
-                        <li>Descripcion: {props.descripcion}</li>
-                    </ul>
-                </div>
-                </div>
+            <div>
+                <img src={pictureUrl} width="550px"/>
+            </div>
+            <div style={{margin:"40px 100px", lineHeight:"1.7"}}>
 
+                <ul >
+                    <h2>{title}</h2>
+                    {/* <li>ID: {props.id}</li> */}
+                    <li>Stock: {stock}</li>
+                    <li>$ {precio}</li>
+                    <li>Descripcion: {descripcion}</li>
 
-        {/* <ul className="tarjetas">
-            <li> <img src= {pictureUrl} width="298px" height="180px"/></li>
-            <li className="detallesCard">{title}</li>
-            <li className="detallesCard">Precio: ${precio}</li>
-            <li className="detallesCard">Stock: {stock}</li>
-            <li>
-                <button className="añadirCarrito" onClick={addToBasket}> <b>Añadir al <span><CartWidget/></span></b></button>
-            </li>
-            <Link to= {`/item/${id}`} >
-            <b className="linkDetalles">Ver detalles...</b>
-            </Link> 
+                    <li>
+                        <button className='finCompra' onClick={addToBasket}>Añadir al carrito</button>
+                    </li>
 
-        </ul> */}
-        </>
+                </ul>
+            </div>
+        </div>
     )
+
 }
