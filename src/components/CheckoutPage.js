@@ -2,33 +2,44 @@
 import React from "react";
 import CheckoutCard from "./CheckoutCard";
 import '../CSS/carrito.css'
-// import Products from "./Products";
-// import Total from
-// import { productsDetail } from "./mercaderia";
 import Total from "./Total";
 import { useStateValue } from "../StateProvider";
+import { Link } from "react-router-dom";
 
 
 const CheckoutPage = ()=>{
 
     const [{basket}, dispatch] = useStateValue()
-    // const [{basket}, dispatch]= useStateValue()
 
     return(
         <>
-            <h1 className="carrito">Carrito</h1>
-            <Total/>
-            
-            <hr></hr>
+            {basket.length === 0 && (
+                <div>
+                <br/>
+                <h1 className="carrito">Carrito Vacio</h1>
+                <h2 className="carrito"> II </h2>
+                <h2 className="carrito"> V </h2>
+                <Link to="/" > <h2  className="carrito">Ver productos</h2></Link>
+                </div>
+            )}
 
-            <div className="contenedorCarrito">
-                {/* <FormRow/> */}
-                {basket?.map((item)=>(
-                    <div className="tarjetasCarrito"> 
-                        <CheckoutCard key={item.id} product={item} />
-                    </div>
-                ))}
-            </div>
+            {basket.length > 0 && (
+                <>
+                <h1 className="carrito">Carrito</h1>
+                <Total/>
+                
+                <hr></hr>
+
+                <div className="contenedorCarrito">
+
+                    {basket?.map((item)=>(
+                        <div className="tarjetasCarrito"> 
+                            <CheckoutCard key={item.id} product={item} />
+                        </div>
+                    ))}
+                </div>
+                </>
+            )}
         </>
     )
 }

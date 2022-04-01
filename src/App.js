@@ -8,6 +8,7 @@ import Products from "./components/Products";
 import CheckoutPage from "./components/CheckoutPage"
 import { Route } from "react-router-dom";
 import ItemDetailContainer from "./components/ItemDetailContainer";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
 
       <Route path="/carrito">
         <CheckoutPage/>
+        
       </Route>
 
       <Route path="/item/:id">
@@ -27,14 +29,17 @@ function App() {
 
       <Route exact path="/category/:categoryId">
         <Products/>
+        <Footer/>
       </Route>
       
       <Route path="/">
         <Products/>
+        <Footer/>
       </Route>
 
 
     </Switch>
+    
 
     </BrowserRouter>
   );

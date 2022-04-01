@@ -10,8 +10,9 @@ function NavBar(){
     const [{basket},dispatch]= useStateValue()
     return (
         <>
+        {/* <div className='navContent'> */}
         <nav className="navbar">
-        <h1 ><Link className="fantasia" to='/'>Bikeshop</Link></h1>
+            <h1 ><Link className="fantasia" to='/'>Bikeshop</Link></h1>
             <ul className="subCategoria">
                 <li>
                     <Link to='/'>Inicio</Link>
@@ -40,6 +41,7 @@ function NavBar(){
             </ul>
         </nav>
          
+         {/* </div> */}
          </>
 
     )

@@ -25,12 +25,12 @@ export default function ItemDetail ({items:{id, title, stock, precio, pictureUrl
     return(
         
 
-        <div style={{display:"flex", flexWrap:"wrap",margin:"30px"}}>
+        <div style={{display:"flex", flexWrap:"wrap", margin:"30px"}}>
 
             <div>
                 <img src={pictureUrl} width="550px"/>
             </div>
-            <div style={{margin:"40px 100px", lineHeight:"1.7"}}>
+            <div style={{margin:"40px", lineHeight:"1.7", width:"300px"}}>
 
                 <ul >
                     <h2>{title}</h2>

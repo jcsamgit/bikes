@@ -21,7 +21,7 @@ const reducer = (state, action) =>{
         case "REMOVE_ITEM":
             const index= state.basket.findIndex((basketItem=> basketItem.id===action.id))
             let newBasket=[...state.basket]
-            if (index>=0){
+            if (index >= 0){
                 newBasket.splice(index,1)
             }
             else {console.log("no hay cantidades negativas")}
