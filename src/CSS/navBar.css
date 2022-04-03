@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .navContent{
+    height: 80px;
+    background-color: black;
+    position: fixed;
+    top: 25px;
+} */
+.navbar{
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+    background-color: aquamarine;
+    /* text-decoration: none; */
+    /* height: 60px; */
+    /* display: flex; */
+    /* justify-content: right; */
+
+}
+/* .menu{ */
+    /* position: sticky; */
+    /* top: 33px; */
+    /* list-style: none; */
+    /* position: absolute; */
+    /* right: 1rem; */
+    /* align-items: center; */
+    /* text-align: center;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+} */
+.menu{
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+
+.menu li{
+    /* text-decoration: none; */
+    /* margin: 12 px; */
+    display: inline-block;
+}
+.menu li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 0.8rem;
+
+}
+.menu li a:hover{
+    background-color: orange;
+    width: 100vw;
+}
+
+
+
+/* submenu */
+.menu{
+    margin-left: 0;
+}
+
+.menu li ul{
+    display: none;
+    /* position: absolute; */
+    /* left: 60px; */
+    /* top: 60px; */
+    width: 100px;
+    text-align: center;
+}
+.menu li:hover > ul{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100vw;
+    color: black;
+    margin: 0;
+    z-index: 5;
+}
+
+.menu li ul li{
+    background-color: aquamarine;
+    border-collapse:separate;
+    /* display: block; */
+    height: 50px;
+    padding: 0;
+
+}
+/* nombre de fantasia */
+.fantasia {
+    display: block;
+    background-color: aquamarine;
+    /* position: absolute; */
+    /* left: 0; */
+    padding: 10px;
+    padding-top:14px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navCart .fas:hover{
+    color: red;
+}
+
+.contadorCarrito{
+    background-color: red;
+    color: white;
+    font-size: 13px;
+    width: 15px;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    bottom: 14px;
+    right: 5px;
+}
+
+
+
+
+
+
+
+/* para escritorio */ 
+/* @media only screen and (min-width: 1024px){ */
+@media only screen and (min-width: 500px){
+    .navbar{
+        text-decoration: none;
+        height: 60px;
+        /* display: flex; */
+        /* flex-flow: column nowrap; */
+    
+    }
+    .menu{
+        list-style: none;
+        position: absolute;
+        right: .5rem;
+        display: flex;
+        flex-flow: row wrap;
+        /* justify-content: flex-end; */
+        /* align-items: flex-end;         */
+    }
+    .menu li{
+        /* text-decoration: none; */
+        /* margin: 12 px; */
+        /* display: inline-block; */
+        /* background-color: black; */
+        padding: 0;
+    }
+    .menu li a{
+        text-decoration: none;
+        color: black;
+        display: block;
+        padding: 20px;
+    
+    }
+    .menu li a:hover{
+        background-color: orange;
+        width: 100%;
+    }
+    
+    
+    /* submenu */
+    .menu{
+        margin-left: 0;
+    }
+    
+    .menu li ul{
+        display: none;
+        position: absolute;
+        left: 76.5px;
+        top: 60px;
+        width: 110px;
+    }
+    .menu li:hover > ul{
+        display: block;
+        color: black;
+        margin: 0;
+        z-index: 5;
+        width: 110px;
+    }
+    
+    .menu li ul li{
+        background-color: aquamarine;
+        border-collapse:separate;
+        display: block;
+        height: 55px;
+        padding: 0;
+    
+    }
+    
+    .contadorCarrito{
+        background-color: red;
+        color: white;
+        font-size: 13px;
+        width: 15px;
+        text-align: center;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 35px;
+        right: 13px;
+    }
+
+    /* nombre de fantasia */
+    .fantasia {
+        display: inline;
+        position: absolute;
+        left: 0%;
+        margin: 1px;
+        background-color: transparent;
+        padding: 8px;
+        text-decoration: none;
+        font-size: 2rem;
+    }
+    
+    .navCart .fas:hover{
+        color: red;
+    }
+    
+}
+
+

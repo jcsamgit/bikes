@@ -19,8 +19,10 @@ export default function CheckoutCard({product:{id,title, precio, pictureUrl}}){
             <img src= {pictureUrl} width="198px" height="109px"/>
             <p>{title}</p>
             <p >precio: ${precio}</p>
+            <div className="tachoContent">
+                <button className="eliminar" onClick={removeItem}> <a href="#"> <i class="fas fa-trash"></i> </a>   </button>
 
-            <button className="eliminar" onClick={removeItem}> <a href="#"> <i class="fas fa-trash"></i> </a>   </button>
+            </div>
 
 
         </>

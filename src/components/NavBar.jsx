@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom'
-import './navBar.css'
+import '../CSS/navBar.css'
 import './CartWidget.js'
 import CartWidget from './CartWidget.js'
 import {useStateValue} from "../StateProvider"
@@ -11,9 +11,9 @@ function NavBar(){
     return (
         <>
         {/* <div className='navContent'> */}
-        <nav className="navbar">
             <h1 ><Link className="fantasia" to='/'>Bikeshop</Link></h1>
-            <ul className="subCategoria">
+        <nav className="navbar">
+            <ul className="menu">
                 <li>
                     <Link to='/'>Inicio</Link>
                 </li>
@@ -29,13 +29,17 @@ function NavBar(){
                 </li>
                 <li>
 
-                    <Link to={'/carrito'}> <span className='navCart'><CartWidget/></span></Link> 
-                    {basket?.length>0 &&   
-                    
-                        <div className='contadorCarrito'>
-                        {basket?.length}
-                        </div>
-                    }
+                    <Link to={'/carrito'}> 
+                        <span className='navCart'>
+                            <CartWidget/>
+                                {basket?.length > 0 &&   
+                                    <p className='contadorCarrito'>
+                                        {basket?.length}
+                                    </p>
+                                }
+                        </span>
+                    </Link> 
+
                 </li>
                     
             </ul>

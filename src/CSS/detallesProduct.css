@@ -1,0 +1,46 @@
+
+
+
+
+.contenedorItemDetail{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin-top: 15px;
+
+}
+.imgDetail{
+    width: 90vw;
+
+}
+.contenedorDetail{
+    margin: 10px;
+    line-height: 1.7;
+    width: 80vw;
+
+}
+.finCompra{
+    margin: 15px 0 25px 0;
+}
+
+/* @media only screen and (min-width: 1024px){ */
+@media only screen and (min-width: 500px){
+
+    .contenedorItemDetail{
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 20px;
+    }
+    .imgDetail{
+        width: 55vw;
+        margin-top: 45px;
+    }
+    .contenedorDetail{
+        margin: 40px;
+        line-height: 1.7;
+        width: 300px;
+    }
+}

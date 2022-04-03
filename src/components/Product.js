@@ -30,9 +30,7 @@ export default function Product({product:{id, title, stock, precio, pictureUrl, 
             setNewStock(newStock-1)            
             console.log("cantidad", cantidad)
         }else{
-            // alert("Se acabo el stock")
             let boton= document.getElementById(id)
-            // let boton= document.getElementsByClassName("añadirCarrito")
             boton.innerText=">>>sin stock"
         }
     }
@@ -40,16 +38,16 @@ export default function Product({product:{id, title, stock, precio, pictureUrl, 
     return( 
         <>
         <ul className="tarjetas">
-            <li> <img src= {pictureUrl} width="298px" height="180px"/></li>
+            <li> <img src= {pictureUrl} className="tarjetas-img"/></li>
             <li className="detallesCard">{title}</li>
             <li className="detallesCard">Precio: ${precio}</li>
             <li className="detallesCard">Stock: {newStock}</li>
-            <li>
-                <button id={id} className="añadirCarrito" onClick={addToBasket}> <b>Añadir al <span><CartWidget/></span></b></button>
-            </li>
+            <li className="linkDetalles">
             <Link to= {`/item/${id}`} >
-            <b className="linkDetalles">Ver detalles...</b>
+            <b>Ver detalles...</b>
             </Link> 
+            </li>
+            <button id={id} className="añadirCarrito" onClick={addToBasket}> <b>Añadir al <span><CartWidget/></span></b></button>
 
         </ul>
         </>

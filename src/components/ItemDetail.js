@@ -1,46 +1,60 @@
 
 
-import React from "react"
+import React, { useState } from "react";
 import {useStateValue} from "../StateProvider"
 import { actionTypes } from "../reducer";
+import '../CSS/detallesProduct.css'
 
 export default function ItemDetail ({items:{id, title, stock, precio, pictureUrl, descripcion}}){
-    // const [cantidadSeleccionada,setCantidadSeleccionada]= useState(0)
     const [{basket}, dispatch]= useStateValue();
+    const [cantidad, setCantidad] =useState(1)
+    const [newStock, setNewStock]= useState(stock)
+    console.log("stock", stock) // por alguna razon stock es undefine
+    console.log("newStock", newStock)
     
     const addToBasket= ()=> {
-        dispatch({
-            type: actionTypes.ADD_TO_BASKET,
-            item: {
-                id,
-                title,
-                stock,
-                precio,
-                pictureUrl,
-                descripcion,
-            }
-        })
+
+        if(cantidad<=stock){
+
+            dispatch({
+                type: actionTypes.ADD_TO_BASKET,
+                item: {
+                    id,
+                    title,
+                    stock,
+                    precio,
+                    pictureUrl,
+                    descripcion,
+                }
+            })
+            setCantidad(cantidad+1)
+            setNewStock(newStock-1)            
+            console.log("cantidad", cantidad)
+        }else{
+            let boton= document.getElementById(id)
+            boton.innerText=">>>sin stock"
+        }
     }
 
     return(
         
 
-        <div style={{display:"flex", flexWrap:"wrap", margin:"30px"}}>
+        <div className="contenedorItemDetail">
 
             <div>
-                <img src={pictureUrl} width="550px"/>
+                <img src={pictureUrl} className="imgDetail"/>
             </div>
-            <div style={{margin:"40px", lineHeight:"1.7", width:"300px"}}>
+            <div className="contenedorDetail" >
 
                 <ul >
                     <h2>{title}</h2>
-                    {/* <li>ID: {props.id}</li> */}
-                    <li>Stock: {stock}</li>
+                    <li>Stock: {stock-cantidad+1}</li>
+                    {/* <li>Stock: {newStock}</li> */}
                     <li>$ {precio}</li>
                     <li>Descripcion: {descripcion}</li>
 
                     <li>
-                        <button className='finCompra' onClick={addToBasket}>Añadir al carrito</button>
+                        <button id={id} className='finCompra' onClick={addToBasket}>Añadir al carrito</button>
                     </li>
 
                 </ul>

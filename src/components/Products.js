@@ -37,9 +37,9 @@ export default function Products(){
       },[categoryId])
     return(
         <>
-        <h2 className="tituloMain">Visite nuestro catalogo</h2>
+        <h2 className="tituloMain">Catalogo</h2>
         <section>
-        <h3 className="modelos">Modelos del año:</h3>
+        <h3 className="modelos">Productos de calidad:</h3>
         <div className="catalogo"> 
             <div className="contenedorTarjetas"> 
                 {
