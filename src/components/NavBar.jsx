@@ -25,7 +25,8 @@ function NavBar(){
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Contacto</a>
+                    <li><Link to={'/contacto'}>Contacto</Link></li>
+                    {/* <a href="#">Contacto</a> */}
                 </li>
                 <li>
 

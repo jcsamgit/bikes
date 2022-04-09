@@ -1,0 +1,47 @@
+
+.subtitulo{
+    text-align: center;
+    color: blueviolet;
+    margin-top: 30px;
+    font-size: 200%;
+}
+.form{
+    display: flex;
+    flex-flow: column;
+    /* justify-content: center; */
+    /* justify-items: center; */
+    align-items: center;
+    margin-top: 30px;
+}
+.form label{
+    margin: 10px;
+    text-align: center;
+}
+.form input{
+    /* margin-left: 5px; */
+    height: 30px;
+    margin-top: 5px;
+    text-align: center;
+}
+.form textarea{
+    margin-top: 5px;
+}
+.submit{
+    background-color: aquamarine;
+    padding: 5px;
+}
+.submit:hover{
+    background-color: aqua;
+}
+
+/* css para orden de compra */
+
+.notiContainer{
+    margin: 20px;
+}
+.notiContainer h4{
+    margin: 10px;
+}
+.notiContainer h3 span{
+    color: red;
+}

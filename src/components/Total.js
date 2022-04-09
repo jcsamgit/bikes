@@ -1,5 +1,6 @@
 
 import React from 'react'
+import { Link } from 'react-router-dom';
 // import { getBasketTotal } from '../reducer'
 import { useStateValue } from '../StateProvider'
 
@@ -13,7 +14,10 @@ const Total = () => {
   return (
     <div className='total'>
         <p>Total: ${getBasketTotal}  </p>
-        <button className='finCompra'>Terminar compra</button>
+
+        <button className='finCompra'>
+          <Link to="/orden-de-compra" style={{textDecoration:"none"}}>Terminar compra</Link>
+        </button>
     </div>
   )
 }

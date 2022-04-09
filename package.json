@@ -2,7 +2,7 @@
   "name": "bikes",
   "version": "0.1.0",
   "private": true,
-  "homepage":"http://jcsamgit.github.io/bikes",
+  "homepage": "http://jcsamgit.github.io/bikes",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.3",
@@ -12,6 +12,7 @@
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.0",
     "react-scripts": "5.0.0",
+    "uuid": "^8.3.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
