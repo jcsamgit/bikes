@@ -9,11 +9,11 @@ import { Link } from "react-router-dom";
 
 const CheckoutPage = ()=>{
 
-    const [{basket}, dispatch] = useStateValue()
+    const [{cart}, dispatch] = useStateValue()
 
     return(
         <>
-            {basket.length === 0 && (
+            {cart.length === 0 && (
                 <div>
                 <br/>
                 <h1 className="carrito">Carrito Vacio</h1>
@@ -23,7 +23,7 @@ const CheckoutPage = ()=>{
                 </div>
             )}
 
-            {basket.length > 0 && (
+            {cart.length > 0 && (
                 <>
                 <h1 className="carrito">Carrito</h1>
                 <Total/>
@@ -32,7 +32,7 @@ const CheckoutPage = ()=>{
 
                 <div className="contenedorCarrito">
 
-                    {basket?.map((item)=>(
+                    {cart?.map((item)=>(
                         <div className="tarjetasCarrito"> 
                             <CheckoutCard key={item.id} product={item} />
                         </div>

@@ -7,7 +7,7 @@ import {useStateValue} from "../StateProvider"
 
 
 function NavBar(){
-    const [{basket},dispatch]= useStateValue()
+    const [{cart},dispatch]= useStateValue()
     return (
         <>
         {/* <div className='navContent'> */}
@@ -33,9 +33,9 @@ function NavBar(){
                     <Link to={'/carrito'}> 
                         <span className='navCart'>
                             <CartWidget/>
-                                {basket?.length > 0 &&   
+                                {cart?.length > 0 &&   
                                     <p className='contadorCarrito'>
-                                        {basket?.length}
+                                        {cart?.length}
                                     </p>
                                 }
                         </span>

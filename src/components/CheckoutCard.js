@@ -8,7 +8,7 @@ import {actionTypes} from "../reducer"
 
 
 export default function CheckoutCard({product:{id,title, precio, pictureUrl}}){
-    const [{basket},dispatch]= useStateValue()
+    const [{cart},dispatch]= useStateValue()
 
     const removeItem= ()=> dispatch({
         type: actionTypes.REMOVE_ITEM,  

@@ -7,16 +7,16 @@ import {useStateValue} from "../StateProvider"
 
 
 export default function Product({product:{id, title, stock, precio, pictureUrl, descripcion}}){
-    const [{basket}, dispatch]= useStateValue();
+    const [{cart}, dispatch]= useStateValue();
     const [cantidad, setCantidad] =useState(1)
     const [newStock, setNewStock]= useState(stock)
     
-    const addToBasket= ()=> {
+    const addToCart= ()=> {
 
         if(cantidad<=stock){
 
             dispatch({
-                type: actionTypes.ADD_TO_BASKET,
+                type: actionTypes.ADD_TO_CART,
                 item: {
                     id,
                     title,
@@ -47,7 +47,7 @@ export default function Product({product:{id, title, stock, precio, pictureUrl, 
             <b>Ver detalles...</b>
             </Link> 
             </li>
-            <button id={id} className="añadirCarrito" onClick={addToBasket}> <b>Añadir al <span><CartWidget/></span></b></button>
+            <button id={id} className="añadirCarrito" onClick={addToCart}> <b>Añadir al <span><CartWidget/></span></b></button>
 
         </ul>
         </>
