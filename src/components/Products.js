@@ -9,14 +9,12 @@ import { useParams } from "react-router-dom";
 export default function Products(){
 
     const [items,setItems]= useState([])
-    // const {products}= useContext(productContext)
     let { categoryId } = useParams();
   
     useEffect(()=>{
         var promesa= new Promise((resolve,reject)=>{
             
             setTimeout(()=>{
-                // resolve(products)
                 resolve(productsDetail)
             },0)
         })

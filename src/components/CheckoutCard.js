@@ -1,9 +1,7 @@
 
 
 import React from "react";
-import { Link } from "react-router-dom";
 import { useStateValue } from "../StateProvider";
-import CartWidget from "./CartWidget";
 import {actionTypes} from "../reducer"
 
 

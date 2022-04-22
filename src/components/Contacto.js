@@ -8,35 +8,29 @@ export default function Contacto() {
     const [telefono, setTelefono]=useState("")
     const [email, setEmail]=useState("")
     const [textArea, setTextArea]=useState("")
-    // console.log("idd",uuidv4())
 
     const handleNombre=(e)=>{
         const target=e.target
-        // const name= target.name
         const value= target.value
         setNombre(value)
     }
     const handleApellido=(e)=>{
         const target=e.target
-        // const name= target.name
         const value= target.value
         setApellido(value)
     }
     const handleTelefono=(e)=>{
         const target=e.target
-        // const name= target.name
         const value= target.value
         setTelefono(value)
     }
     const handleEmail=(e)=>{
         const target=e.target
-        // const name= target.name
         const value= target.value
         setEmail(value)
     }
     const handleTextArea=(e)=>{
         const target=e.target
-        // const name= target.name
         const value= target.value
         setTextArea(value)
     }

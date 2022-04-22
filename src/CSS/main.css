@@ -3,13 +3,10 @@
     padding: 0;
 }
 #root{
-    /* height: 100%; */
-    /* background-color: blue; */
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between;
-    /* justify-content: space-evenly; */
 }
 
 .tituloMain{
@@ -41,7 +38,6 @@ ul{
     
 }
 .tarjetas{
-    /* display: flex; */
     background-color: sandybrown;
     margin: 30px;
     width: 280px;
@@ -58,8 +54,6 @@ ul{
     position: absolute;
     bottom: 2px;
     left: 2px;
-    /* display: flex; */
-    /* justify-content: space-between; */
 }
 .añadirCarrito{
     position:absolute;
@@ -78,11 +72,6 @@ ul{
     color: red;
 }
 
-/* .linkDetalles{
-    position: relative;
-    top: 5px;
-    margin-left: 2px;
-} */
 .detallesCard{
     margin-left: 2px;
 }
