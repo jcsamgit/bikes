@@ -7,6 +7,7 @@ import { Route } from "react-router-dom";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import Footer from "./components/Footer";
 import Contacto from "./components/Contacto";
+import IniciarSesion from "./components/IniciarSesion";
 import OrdenDeCompra from "./components/OrdenDeCompra";
 
 
@@ -20,9 +21,14 @@ function App() {
       <Route path="/orden-de-compra">
         <OrdenDeCompra/>
       </Route>
+
       <Route path="/contacto">
         <Contacto/>
       </Route>
+      <Route path="/sesion">
+        <IniciarSesion/>
+      </Route>
+
       <Route path="/carrito">
         <CheckoutPage/>
       </Route>

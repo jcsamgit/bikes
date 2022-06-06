@@ -27,6 +27,9 @@ function NavBar(){
                         <li><Link to={'/contacto'}>Contacto</Link></li>
                     </li>
                     <li>
+                        <li><Link to={'/sesion'}>Iniciar sesion</Link></li>
+                    </li>
+                    <li>
 
                         <Link to={'/carrito'}> 
                             <span className='navCart'>
