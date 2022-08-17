@@ -19,7 +19,7 @@ const CheckoutPage = ()=>{
                 <h1 className="carrito">Carrito Vacio</h1>
                 <h2 className="carrito"> II </h2>
                 <h2 className="carrito"> V </h2>
-                <Link to="/" > <h2  className="carrito">Ver productos</h2></Link>
+                <Link to="/bikes" > <h2  className="carrito">Ver productos</h2></Link>
                 </div>
             )}
 

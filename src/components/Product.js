@@ -43,7 +43,7 @@ export default function Product({product:{id, title, stock, precio, pictureUrl, 
             <li className="detallesCard">Precio: ${precio}</li>
             <li className="detallesCard">Stock: {newStock}</li>
             <li className="linkDetalles">
-            <Link to= {`/item/${id}`} >
+            <Link to= {`/bikes/item/${id}`} >
             <b>Ver detalles...</b>
             </Link> 
             </li>

@@ -10,25 +10,25 @@ function NavBar(){
     const [{cart},dispatch]= useStateValue()
     return (
         <>
-            <h1 ><Link className="fantasia" to='/'>Bikeshop</Link></h1>
+            <h1 ><Link className="fantasia" to='/bikes'>Bikeshop</Link></h1>
             <nav className="navbar">
                 <ul className="menu">
                     <li>
-                        <Link to='/'>Inicio</Link>
+                        <Link to='/bikes'>Inicio</Link>
                     </li>
                     <li>
                         <Link to='#'>Categoria</Link>
                         <ul >
-                            <li><Link to={'/category/bicicletas'}>Bicicletas</Link> </li>
-                            <li><Link to={'/category/accesorios'}>Accesorios</Link></li>
+                            <li><Link to={'/bikes/category/bicicletas'}>Bicicletas</Link> </li>
+                            <li><Link to={'/bikes/category/accesorios'}>Accesorios</Link></li>
                         </ul>
                     </li>
                     <li>
-                        <li><Link to={'/contacto'}>Contacto</Link></li>
+                        <li><Link to={'/bikes/contacto'}>Contacto</Link></li>
                     </li>
                     <li>
 
-                        <Link to={'/carrito'}> 
+                        <Link to={'/bikes/carrito'}> 
                             <span className='navCart'>
                                 <CartWidget/>
                                     {cart?.length > 0 &&   

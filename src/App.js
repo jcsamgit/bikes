@@ -17,26 +17,26 @@ function App() {
     <NavBar/>
     <Switch>
 
-      <Route path="/orden-de-compra">
+      <Route path="/bikes/orden-de-compra">
         <OrdenDeCompra/>
       </Route>
-      <Route path="/contacto">
+      <Route path="/bikes/contacto">
         <Contacto/>
       </Route>
-      <Route path="/carrito">
+      <Route path="/bikes/carrito">
         <CheckoutPage/>
       </Route>
 
-      <Route path="/item/:id">
+      <Route path="/bikes/item/:id">
         <ItemDetailContainer/>
       </Route>
 
-      <Route exact path="/category/:categoryId">
+      <Route exact path="/bikes/category/:categoryId">
         <Products/>
         <Footer/>
       </Route>
       
-      <Route path="/">
+      <Route path="/bikes">
         <Products/>
         <Footer/>
       </Route>
