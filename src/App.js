@@ -1,5 +1,5 @@
 
-import { BrowserRouter, Switch } from "react-router-dom/cjs/react-router-dom.min";
+import { HashRouter, Switch } from "react-router-dom/cjs/react-router-dom.min";
 import NavBar from "./components/NavBar";
 import Products from "./components/Products";
 import CheckoutPage from "./components/CheckoutPage"
@@ -12,7 +12,7 @@ import OrdenDeCompra from "./components/OrdenDeCompra";
 
 function App() {
   return (    
-    <BrowserRouter>
+    <HashRouter>
 
     <NavBar/>
     <Switch>
@@ -45,7 +45,7 @@ function App() {
     </Switch>
     
 
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
