@@ -8,6 +8,7 @@ import ItemDetailContainer from "./components/ItemDetailContainer";
 import Footer from "./components/Footer";
 import Contacto from "./components/Contacto";
 import IniciarSesion from "./components/IniciarSesion";
+import Registrarse from "./components/Registrarse";
 import OrdenDeCompra from "./components/OrdenDeCompra";
 
 
@@ -27,6 +28,9 @@ function App() {
       </Route>
       <Route path="/sesion">
         <IniciarSesion/>
+      </Route>
+      <Route path="/registro">
+        <Registrarse/>
       </Route>
 
       <Route path="/carrito">
