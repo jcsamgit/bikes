@@ -8,10 +8,13 @@ import Checkbox from '@mui/material/Checkbox';
 import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
+// import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
+import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import {Link as RouterLink, useHistory} from "react-router-dom"
+
 
 function Copyright(props) {
   return (
@@ -117,9 +120,9 @@ export default function Registrarse() {
             </Button>
             <Grid container justifyContent="flex-end">
               <Grid item>
-                <Link href="#" variant="body2">
-                  Already have an account? Sign in
-                </Link>
+                <RouterLink to="/sesion">
+                  Ya tienes cuenta? Inicia sesion
+                </RouterLink>
               </Grid>
             </Grid>
           </Box>

@@ -103,7 +103,7 @@ export default function IniciarSesion() {
               </Link>
             </Grid>
             <Grid item>
-              <RouterLink to="registro">
+              <RouterLink to="/registro">
                 {"No tienes cuenta? Registrate"}
               </RouterLink>
             </Grid>
