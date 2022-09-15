@@ -16,7 +16,7 @@ const Total = () => {
         <p>Total: ${getCartTotal}  </p>
 
         <button className='finCompra'>
-          <Link to="/orden-de-compra" style={{textDecoration:"none"}}>Terminar compra</Link>
+          <Link to="/checkout" style={{textDecoration:"none"}}>Terminar compra</Link>
         </button>
     </div>
   )

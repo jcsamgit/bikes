@@ -9,19 +9,36 @@ import Footer from "./components/Footer";
 import Contacto from "./components/Contacto";
 import IniciarSesion from "./components/IniciarSesion";
 import Registrarse from "./components/Registrarse";
-import OrdenDeCompra from "./components/OrdenDeCompra";
+// import OrdenDeCompra from "./components/OrdenDeCompra";
+import { useEffect } from "react";
+import { auth } from "./firebase";
+import { actionTypes } from "./reducer";
+import {useStateValue} from "./StateProvider"
+import Checkout from "./components/CheckoutForm/Checkout";
 
 
 function App() {
+  const [{user}, dispatch]= useStateValue()
+  useEffect(()=>{
+    auth.onAuthStateChanged((authUser)=>{
+      console.log(authUser)
+      if (authUser){
+        dispatch({
+          type: actionTypes.SET_USER,
+          user: authUser,
+        })
+      }
+    })
+  },[])
   return (    
     <BrowserRouter>
 
     <NavBar/>
     <Switch>
 
-      <Route path="/orden-de-compra">
+      {/* <Route path="/orden-de-compra">
         <OrdenDeCompra/>
-      </Route>
+      </Route> */}
 
       <Route path="/contacto">
         <Contacto/>
@@ -35,6 +52,9 @@ function App() {
 
       <Route path="/carrito">
         <CheckoutPage/>
+      </Route>
+      <Route path="/checkout">
+        <Checkout/>
       </Route>
 
       <Route path="/item/:id">
