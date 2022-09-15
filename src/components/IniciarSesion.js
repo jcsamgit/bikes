@@ -20,7 +20,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://mui.com/">
-        Your Website
+        Bikeshop
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -68,7 +68,7 @@ export default function IniciarSesion() {
           <LockOutlinedIcon />
         </Avatar>
         <Typography component="h1" variant="h5">
-          Sign in
+          Inicia sesion
         </Typography>
         <form className={classes.form} noValidate>
           <TextField
@@ -81,7 +81,7 @@ export default function IniciarSesion() {
             required
             fullWidth
             id="email"
-            label="Email Address"
+            label="Email"
             name="email"
             autoComplete="email"
             autoFocus
@@ -96,14 +96,14 @@ export default function IniciarSesion() {
             required
             fullWidth
             name="password"
-            label="Password"
+            label="Contraseña"
             type="password"
             id="password"
             autoComplete="current-password"
           />
           <FormControlLabel
             control={<Checkbox value="remember" color="primary" />}
-            label="Remember me"
+            label="Recuerdame"
           />
           <Button
             type="submit"
@@ -114,12 +114,12 @@ export default function IniciarSesion() {
 
             onClick={signin}
           >
-            Sign In
+            Iniciar sesion
           </Button>
           <Grid container>
             <Grid item xs>
               <Link href="#" variant="body2">
-                Forgot password?
+                Olvidaste tu contraseña?
               </Link>
             </Grid>
             <Grid item>

@@ -1,15 +1,13 @@
 
-import { BrowserRouter, Switch } from "react-router-dom/cjs/react-router-dom.min";
+import { HashRouter, Route, Switch } from "react-router-dom/cjs/react-router-dom.min";
 import NavBar from "./components/NavBar";
 import Products from "./components/Products";
 import CheckoutPage from "./components/CheckoutPage"
-import { Route } from "react-router-dom";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import Footer from "./components/Footer";
 import Contacto from "./components/Contacto";
 import IniciarSesion from "./components/IniciarSesion";
 import Registrarse from "./components/Registrarse";
-// import OrdenDeCompra from "./components/OrdenDeCompra";
 import { useEffect } from "react";
 import { auth } from "./firebase";
 import { actionTypes } from "./reducer";
@@ -31,14 +29,10 @@ function App() {
     })
   },[])
   return (    
-    <BrowserRouter>
+    <HashRouter>
 
     <NavBar/>
     <Switch>
-
-      {/* <Route path="/orden-de-compra">
-        <OrdenDeCompra/>
-      </Route> */}
 
       <Route path="/contacto">
         <Contacto/>
@@ -75,7 +69,7 @@ function App() {
     </Switch>
     
 
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

@@ -73,7 +73,7 @@ export default function Registrarse() {
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
-            Sign up
+            Registrate
           </Typography>
           <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
             <Grid container spacing={2}>
@@ -84,7 +84,7 @@ export default function Registrarse() {
                   required
                   fullWidth
                   id="firstName"
-                  label="First Name"
+                  label="Nombre"
                   autoFocus
                 />
               </Grid>
@@ -93,7 +93,7 @@ export default function Registrarse() {
                   required
                   fullWidth
                   id="lastName"
-                  label="Last Name"
+                  label="Apellido"
                   name="lastName"
                   autoComplete="family-name"
                 />
@@ -105,7 +105,7 @@ export default function Registrarse() {
                   required
                   fullWidth
                   id="email"
-                  label="Email Address"
+                  label="Email"
                   name="email"
                   autoComplete="email"
                 />
@@ -117,7 +117,7 @@ export default function Registrarse() {
                   required
                   fullWidth
                   name="password"
-                  label="Password"
+                  label="Conraseña"
                   type="password"
                   id="password"
                   autoComplete="new-password"
@@ -126,7 +126,7 @@ export default function Registrarse() {
               <Grid item xs={12}>
                 <FormControlLabel
                   control={<Checkbox value="allowExtraEmails" color="primary" />}
-                  label="I want to receive inspiration, marketing promotions and updates via email."
+                  label="Deseo recibir promociones y actualizaciones via email"
                 />
               </Grid>
             </Grid>
@@ -137,7 +137,7 @@ export default function Registrarse() {
               sx={{ mt: 3, mb: 2 }}
               onClick={signup}
             >
-              Sign Up
+              Registrar
             </Button>
             <Grid container justifyContent="flex-end">
               <Grid item>
