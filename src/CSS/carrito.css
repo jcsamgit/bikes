@@ -12,6 +12,7 @@
     width: 200px;
     height: 200px;
     border: 1px solid black;
+    box-shadow: 0 0 5px 2px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -97,6 +98,7 @@
 }
 .finCompra:hover{
     background-color: aqua;
+    cursor: pointer;
 }
 
 

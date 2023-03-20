@@ -8,11 +8,29 @@
     flex-wrap: nowrap;
     justify-content: space-between;
 }
+section{
+    /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThhsRcAfuCrF7LgDwlswJl-DWkDa62rUNcUw&usqp=CAU); */
+    /* background-repeat: no-repeat; */
+    /* background-image: url(../image/fondo1.jpg); */
+    /* background-size: contain */
+    animation-name: fondos;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    /* animation-delay: 3s; */
+    
+}
+@keyframes fondos{
+    0%{background-image: url(../image/fondo3.png);}
+    33%{background-image: url(../image/fondo2.jpg);}
+    66%{background-image: url(../image/fondo1.jpg);}
+    100%{background-image: url(../image/fondo3.png);}
+}
 
 .tituloMain{
     color: blueviolet;
     text-align: center;
     margin: 25px;
+    text-shadow: 0 0 2px black;
 }
 .searchContainer{
     text-align: center;
@@ -41,6 +59,7 @@ ul{
     
 }
 .tarjetas{
+    box-shadow: 0 0 5px 2px black;
     background-color: sandybrown;
     margin: 30px;
     width: 280px;
@@ -77,4 +96,13 @@ ul{
 
 .detallesCard{
     margin-left: 2px;
+}
+#buscador{
+    /* background-color: black; */
+    border-radius: 3px;
+    text-align: center;
+    box-shadow: 0 0 5px 5px silver;
+}
+#buscador:focus{
+    font-size: 15px;
 }

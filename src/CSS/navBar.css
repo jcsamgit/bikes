@@ -29,6 +29,11 @@
 .menu li a:hover{
     background-color: orange;
     width: 100vw;
+    color: aquamarine;
+    text-shadow: 0 0 8px black;
+}
+.menu li a:hover .navCart{
+    text-shadow: none;
 }
 
 
@@ -71,10 +76,15 @@
     text-decoration: none;
     text-align: center;
 }
+.fantasia:hover{
+    color: orangered;
+}
 
 .navCart .fas:hover{
     color: red;
+
 }
+
 
 .contadorCarrito{
     background-color: red;
