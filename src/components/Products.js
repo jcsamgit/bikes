@@ -44,7 +44,7 @@ export default function Products(){
     }
     const filtrar=(terminoBusqueda)=>{
         var resultadoBusqueda= productsDetail.filter((elemento)=>{
-            if(elemento.title.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())){
+            if(elemento.title.toLowerCase().includes(terminoBusqueda.toLowerCase())){
                 return elemento
             }
         })

@@ -17,6 +17,7 @@ section{
     animation-duration: 20s;
     animation-iteration-count: infinite;
     /* animation-delay: 3s; */
+    min-height: 68vh;
     
 }
 /* @keyframes fondos{
@@ -101,7 +102,8 @@ ul{
     /* background-color: black; */
     border-radius: 3px;
     text-align: center;
-    box-shadow: 0 0 5px 5px silver;
+    box-shadow: 0 0 2px 2px silver;
+    height: 25px;
 }
 #buscador:focus{
     font-size: 15px;
